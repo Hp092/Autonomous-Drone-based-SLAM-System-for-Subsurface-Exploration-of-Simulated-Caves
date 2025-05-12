@@ -91,31 +91,6 @@ Inspired by lunar lava tubes and Mars exploration missions, the system is design
 
 ---
 
-
-autonomous-drone-slam-cave/
-├── README.md
-├── docs/
-│   └── Project_Proposal_Report.pdf
-├── media/
-│   ├── cave_simulation_1.png
-│   ├── cave_simulation_2.png
-│   └── simulation_video_link.txt
-├── models/
-│   └── cave_model/
-├── worlds/
-│   └── cave_world.sdf
-├── urdf/
-│   └── drone_with_lidar.urdf.xacro
-├── launch/
-│   └── slam.launch.py
-├── config/
-│   └── rtabmap_config.yaml
-└── src/
-    └── slam_node.cpp / .py
-```
-
----
-
 ## Command History / Setup Steps
 
 ### Install PX4 and Dependencies
