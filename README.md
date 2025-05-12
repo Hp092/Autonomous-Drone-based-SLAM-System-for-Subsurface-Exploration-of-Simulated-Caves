@@ -17,7 +17,7 @@ Inspired by lunar lava tubes and Mars exploration missions, the system is design
 
 ## System Architecture
 
-- **Simulator**: Gazebo Classic (with ROS 2 integration)
+- **Simulator**: Gazebo Ignition (with ROS 2 integration)
 - **Autopilot**: PX4
 - **Middleware**: ROS 2 Humble
 - **Modeling**: Blender (for cave creation)
@@ -65,10 +65,8 @@ Inspired by lunar lava tubes and Mars exploration missions, the system is design
 
 ## Media
 
-| Preview 1 | Preview 2 |
-|-----------|-----------|
-| ![Screenshot from 2025-05-08 14-03-38](https://github.com/user-attachments/assets/e716e324-c4a8-40fe-b46f-77ac31643dd6) |
-| ![Screenshot from 2025-05-08 14-51-00](https://github.com/user-attachments/assets/e214a1d3-99f0-4041-8d02-4188a7c59e18) |
+![Screenshot from 2025-05-08 14-03-38](https://github.com/user-attachments/assets/e716e324-c4a8-40fe-b46f-77ac31643dd6)
+![Screenshot from 2025-05-08 14-51-00](https://github.com/user-attachments/assets/e214a1d3-99f0-4041-8d02-4188a7c59e18)
 
 ---
 
@@ -96,35 +94,10 @@ Inspired by lunar lava tubes and Mars exploration missions, the system is design
 |------|---------|
 | Blender | Cave modeling and export |
 | PX4 | Autopilot for drone simulation |
-| Gazebo Classic | 3D simulation environment |
+| Gazebo Ignition | 3D simulation environment |
 | ROS 2 Humble | Robot middleware and messaging |
 | RTAB-Map (planned) | Real-time SLAM |
 | LiDAR (2D) | Mapping sensor |
-
----
-
-
-autonomous-drone-slam-cave/
-├── README.md
-├── docs/
-│   └── Project_Proposal_Report.pdf
-├── media/
-│   ├── cave_simulation_1.png
-│   ├── cave_simulation_2.png
-│   └── simulation_video_link.txt
-├── models/
-│   └── cave_model/
-├── worlds/
-│   └── cave_world.sdf
-├── urdf/
-│   └── drone_with_lidar.urdf.xacro
-├── launch/
-│   └── slam.launch.py
-├── config/
-│   └── rtabmap_config.yaml
-└── src/
-    └── slam_node.cpp / .py
-```
 
 ---
 
@@ -173,10 +146,6 @@ PX4_GZ_WORLD=cave_world make px4_sitl gazebo
 ros2 launch rtabmap_ros rtabmap.launch.py use_sim_time:=true
 ```
 
----
-
-
-
 ### Bridge LiDAR Scan Topic from Ignition to ROS 2
 
 ```bash
@@ -205,6 +174,7 @@ Or with a pre-configured display:
 rviz2 -d ~/ros2_ws/src/my_package/rviz/lidar_view.rviz
 ```
 
+---
 
 ## License
 
