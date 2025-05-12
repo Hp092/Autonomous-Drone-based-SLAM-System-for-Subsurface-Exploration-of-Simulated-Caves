@@ -63,12 +63,8 @@ Inspired by lunar lava tubes and Mars exploration missions, the system is design
 
 ---
 
-## Media
-
-| Preview 1 | Preview 2 |
-|-----------|-----------|
-| ![Screenshot from 2025-05-08 14-03-38](https://github.com/user-attachments/assets/e716e324-c4a8-40fe-b46f-77ac31643dd6) |
-| ![Screenshot from 2025-05-08 14-51-00](https://github.com/user-attachments/assets/e214a1d3-99f0-4041-8d02-4188a7c59e18) |
+![Screenshot from 2025-05-08 14-03-38](https://github.com/user-attachments/assets/e716e324-c4a8-40fe-b46f-77ac31643dd6) |
+![Screenshot from 2025-05-08 14-51-00](https://github.com/user-attachments/assets/e214a1d3-99f0-4041-8d02-4188a7c59e18) |
 
 ---
 
