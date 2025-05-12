@@ -63,8 +63,6 @@ Inspired by lunar lava tubes and Mars exploration missions, the system is design
 
 ---
 
-## Media
-
 ![Screenshot from 2025-05-08 14-03-38](https://github.com/user-attachments/assets/e716e324-c4a8-40fe-b46f-77ac31643dd6)
 ![Screenshot from 2025-05-08 14-51-00](https://github.com/user-attachments/assets/e214a1d3-99f0-4041-8d02-4188a7c59e18)
 
@@ -137,14 +135,10 @@ source install/setup.bash
 
 ```bash
 cd ~/PX4-Autopilot
-PX4_GZ_WORLD=cave_world make px4_sitl gazebo
+PX4_GZ_WORLD=cave_world make px4_sitl gz_x500_depth
 ```
+![TerminalPX4](https://github.com/user-attachments/assets/5e77ce64-f181-4205-831d-55e1cbdb12d2)
 
-### (Planned) Run SLAM Node
-
-```bash
-ros2 launch rtabmap_ros rtabmap.launch.py use_sim_time:=true
-```
 
 ### Bridge LiDAR Scan Topic from Ignition to ROS 2
 
@@ -161,18 +155,20 @@ ros2 run ros_ign_bridge parameter_bridge /world/default/model/x500_lidar_2d/link
 
 > Note: Use `ign topic -l` to find the actual topic name if it's different.
 
+### (Planned) Run SLAM Node
+
+```bash
+ros2 launch project slam_manual.launch.py
+```
+![TerminalROS2launch](https://github.com/user-attachments/assets/cdafaf3a-e76a-4f82-8b66-440c4d734333)
+
 ### Visualize in RViz2
 
 ```bash
 # Launch RViz2 and manually add a "LaserScan" display
 rviz2
 ```
-
-Or with a pre-configured display:
-
-```bash
-rviz2 -d ~/ros2_ws/src/my_package/rviz/lidar_view.rviz
-```
+![TerminalsAll](https://github.com/user-attachments/assets/38d4b365-e44f-44b2-adb4-ed1b777a5257)
 
 ---
 
