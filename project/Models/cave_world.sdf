@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="cave_world">
+    <include>
+      <uri>model://cave</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <light name="cave_light" type="point">
+      <pose>0 0 3 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>1 1 1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>true</cast_shadows>
+    </light>
+  </world>
+</sdf>
